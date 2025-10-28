@@ -6,6 +6,8 @@ public class Main
   {
     printNTimes("donkeu", 6);
     printNums();
+    uprightNumberTriangle(5);
+    starTree();
   }
 
   public static void printNTimes(String word, int N)
@@ -27,7 +29,7 @@ public class Main
     for (int i = 10; i > 0; i--)
     {
       
-      for (int j = 0; j < i; j++)
+      for (int j = 1; j <= i; j++)
       {
         System.out.print(i + " ");
       }
@@ -37,12 +39,37 @@ public class Main
 
   public static void uprightNumberTriangle(int N)
   {
-    // code solution here
+    for (int i = 1; i <= N; i++)
+    {
+      
+      for (int j = 1; j <= i; j++)
+      {
+        System.out.print(i + " ");
+      }
+      System.out.println();
+    }
   }
 
   public static void starTree()
   {
-    // code solution here
+    
+    for (int i = 9; i > 0; i--)
+    {
+      for (int dist = 0; dist < 5; dist++)
+      {
+        
+      }
+
+
+
+
+      for (int j = 1; j <= i; j++)
+      {
+        System.out.print("*" + " ");
+      }
+      System.out.println();
+      dist++;
+    } 
   }
 
   public static void multTable()
